@@ -1,0 +1,59 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+
+class HelloWorldMessage extends React.Component{
+    // render(){
+    //     var message = 'This is paragraph.';
+    //     var count = 1;
+    //     var myStyle = {
+    //         color: 'red'
+    //     }
+
+    //     return(
+    //         <div>
+    //             <h1 style={myStyle}>Main Heading</h1>
+    //             <h1>Sub Heading</h1>
+    //             <p>{message}</p>
+    //             <p>This is the counter value : {count}</p>
+    //             {count === 0 ? alert('Hi') : alert('You are a repeated visitor')}
+    //         </div>
+    //     )
+    // }
+
+    getFormTitle(){
+        return 'User Registration';
+    }
+
+render(){
+    {/*
+    comments
+    */}
+    var myStyle = {
+             color: 'red'
+         }
+    return(
+        <div>
+            <h1 style={myStyle}>{this.getFormTitle()}</h1>
+            <div>
+                <table>
+                    <tr>
+                       <td>Name: </td>
+                       <td><input type='text' name='name'/></td>
+                    </tr>
+                    <tr>
+                       <td>Contact: </td>
+                       <td><input type='text' name='contact'/></td>
+                    </tr>
+                    <tr>
+                       <td className='rightAlign' colSpan='2'><button>Register</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    );
+}
+    
+}
+
+ReactDOM.render(<HelloWorldMessage/>, document.getElementById('root'));
