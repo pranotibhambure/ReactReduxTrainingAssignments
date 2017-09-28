@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id='root'></div>
+    <script type='text/javascript' src='react.js'></script>
+    <script type='text/javascript' src='react-dom.js'></script>
+    <script type='text/javascript'>
+    // document.getElementById('root').innerHTML = 'Hello World';
+
+
+
+    //    function render(whatToRender, whereToRender){
+    //        document.getElementById(whereToRender).innerHTML = whatToRender;
+    //    }
+
+    //    render("Hello world...!","root");
+
+
+
+    // var dom = {
+    //     render: function(whatToRender, whereToRender){
+    //         document.getElementById(whereToRender).innerHTML = whatToRender;
+    //     }
+    // }
+
+    // dom.render("DOM.render() - Hello world...!","root");
+
+    ReactDOM.render(
+        React.DOM.h2(null, 'Hello World using react library'),
+        document.getElementById('root')
+    );
+    </script>
+</body>
+</html>
